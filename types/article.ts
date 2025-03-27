@@ -15,3 +15,10 @@ export const createArticleSchema = insertArticleSchema.pick({
   title: true,
   content: true,
 })
+
+export const updateArticleSchema = insertArticleSchema.pick({
+  title: true,
+  content: true,
+});
+
+export const getArticleSchema = insertArticleSchema.pick({ id: true });
