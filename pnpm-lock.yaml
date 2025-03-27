@@ -8,15 +8,24 @@ importers:
 
   .:
     dependencies:
+      '@hono/zod-validator':
+        specifier: ^0.4.3
+        version: 0.4.3(hono@4.7.5)(zod@3.24.2)
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
       drizzle-orm:
         specifier: ^0.41.0
         version: 0.41.0(@cloudflare/workers-types@4.20250321.0)(gel@2.0.1)
+      drizzle-zod:
+        specifier: ^0.7.0
+        version: 0.7.0(drizzle-orm@0.41.0(@cloudflare/workers-types@4.20250321.0)(gel@2.0.1))(zod@3.24.2)
       hono:
         specifier: ^4.7.5
         version: 4.7.5
+      zod:
+        specifier: ^3.24.2
+        version: 3.24.2
     devDependencies:
       '@cloudflare/vite-plugin':
         specifier: ^0.1.15
@@ -708,6 +717,12 @@ packages:
     resolution: {integrity: sha512-AgJgKLooZyQnzMfoFg5Mo/aHM+HGBC9ExpXIjNqGimYTRgNbL/K7X5EM1kR2JY90BNKk9lo6Usq1T/nWFdT7TQ==}
     hasBin: true
 
+  '@hono/zod-validator@0.4.3':
+    resolution: {integrity: sha512-xIgMYXDyJ4Hj6ekm9T9Y27s080Nl9NXHcJkOvkXPhubOLj8hZkOL8pDnnXfvCf5xEE8Q4oMFenQUZZREUY2gqQ==}
+    peerDependencies:
+      hono: '>=3.9.0'
+      zod: ^3.19.1
+
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
@@ -1130,6 +1145,12 @@ packages:
       sqlite3:
         optional: true
 
+  drizzle-zod@0.7.0:
+    resolution: {integrity: sha512-xgCRYYVEzRkeXTS33GSMgoowe3vKsMNBjSI+cwG1oLQVEhAWWbqtb/AAMlm7tkmV4fG/uJjEmWzdzlEmTgWOoQ==}
+    peerDependencies:
+      drizzle-orm: '>=0.36.0'
+      zod: '>=3.0.0'
+
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
@@ -1506,6 +1527,9 @@ packages:
 
   zod@3.22.3:
     resolution: {integrity: sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug==}
+
+  zod@3.24.2:
+    resolution: {integrity: sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==}
 
 snapshots:
 
@@ -1890,6 +1914,11 @@ snapshots:
       cac: 6.7.14
       mime-types: 2.1.35
 
+  '@hono/zod-validator@0.4.3(hono@4.7.5)(zod@3.24.2)':
+    dependencies:
+      hono: 4.7.5
+      zod: 3.24.2
+
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
       '@img/sharp-libvips-darwin-arm64': 1.0.4
@@ -2148,6 +2177,11 @@ snapshots:
     optionalDependencies:
       '@cloudflare/workers-types': 4.20250321.0
       gel: 2.0.1
+
+  drizzle-zod@0.7.0(drizzle-orm@0.41.0(@cloudflare/workers-types@4.20250321.0)(gel@2.0.1))(zod@3.24.2):
+    dependencies:
+      drizzle-orm: 0.41.0(@cloudflare/workers-types@4.20250321.0)(gel@2.0.1)
+      zod: 3.24.2
 
   eastasianwidth@0.2.0: {}
 
@@ -2607,3 +2641,5 @@ snapshots:
       stacktracey: 2.1.8
 
   zod@3.22.3: {}
+
+  zod@3.24.2: {}

@@ -7,9 +7,12 @@
     "deploy": "wrangler deploy"
   },
   "dependencies": {
+    "@hono/zod-validator": "^0.4.3",
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.41.0",
-    "hono": "^4.7.5"
+    "drizzle-zod": "^0.7.0",
+    "hono": "^4.7.5",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@cloudflare/vite-plugin": "^0.1.15",
