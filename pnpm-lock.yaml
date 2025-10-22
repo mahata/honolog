@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@hono/zod-validator':
         specifier: ^0.4.3
-        version: 0.4.3(hono@4.7.5)(zod@3.24.2)
+        version: 0.4.3(hono@4.10.2)(zod@3.24.2)
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
@@ -21,8 +21,8 @@ importers:
         specifier: ^0.7.0
         version: 0.7.0(drizzle-orm@0.41.0(@cloudflare/workers-types@4.20250321.0)(gel@2.0.1))(zod@3.24.2)
       hono:
-        specifier: ^4.7.5
-        version: 4.7.5
+        specifier: ^4.10.2
+        version: 4.10.2
       zod:
         specifier: ^3.24.2
         version: 3.24.2
@@ -1445,8 +1445,8 @@ packages:
     engines: {node: 20 || >=22}
     hasBin: true
 
-  hono@4.7.5:
-    resolution: {integrity: sha512-fDOK5W2C1vZACsgLONigdZTRZxuBqFtcKh7bUQ5cVSbwI2RWjloJDcgFOVzbQrlI6pCmhlTsVYZ7zpLj4m4qMQ==}
+  hono@4.10.2:
+    resolution: {integrity: sha512-p6fyzl+mQo6uhESLxbF5WlBOAJMDh36PljwlKtP5V1v09NxlqGru3ShK+4wKhSuhuYf8qxMmrivHOa/M7q0sMg==}
     engines: {node: '>=16.9.0'}
 
   is-arrayish@0.3.2:
@@ -2329,9 +2329,9 @@ snapshots:
       cac: 6.7.14
       mime-types: 2.1.35
 
-  '@hono/zod-validator@0.4.3(hono@4.7.5)(zod@3.24.2)':
+  '@hono/zod-validator@0.4.3(hono@4.10.2)(zod@3.24.2)':
     dependencies:
-      hono: 4.7.5
+      hono: 4.10.2
       zod: 3.24.2
 
   '@img/sharp-darwin-arm64@0.33.5':
@@ -2871,7 +2871,7 @@ snapshots:
       package-json-from-dist: 1.0.1
       path-scurry: 2.0.0
 
-  hono@4.7.5: {}
+  hono@4.10.2: {}
 
   is-arrayish@0.3.2:
     optional: true
